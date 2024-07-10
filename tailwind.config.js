@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       width:{
-        'c1080':'1080px'
+        'c1080':'1100px'
       }
     },
   },

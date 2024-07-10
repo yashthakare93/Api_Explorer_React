@@ -4,12 +4,12 @@ import { Sidebars } from "../components/Sidebars";
 
 const APILab = () => {
   return (
-    <div className=" min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="flex flex-1">
+      <div className="flex flex-1 overflow-hidden">
         <Sidebars />
-        <div className="flex-1 bg-gray-950 ">
-          <MainContent/>
+        <div className="flex-1 bg-gray-950 overflow-auto">
+          <MainContent />
         </div>
       </div>
     </div>
