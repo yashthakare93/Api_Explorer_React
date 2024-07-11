@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Input = ({ value, onChange }) => {
+const Input = ({ value, onChange, placeholder }) => {
   const handleChange = (e) => {
     onChange(e.target.value);
   };
@@ -8,8 +8,8 @@ const Input = ({ value, onChange }) => {
   return (
     <div className="flex-1">
       <input
-        className="w-c1080 h-12 px-3 py-2 text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-        placeholder="Enter URL Or Paste"
+        className="w-full h-12 px-3 py-2 text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+        placeholder={placeholder}
         value={value}
         onChange={handleChange}
       />
@@ -20,6 +20,11 @@ const Input = ({ value, onChange }) => {
 Input.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+};
+
+Input.defaultProps = {
+  placeholder: '',
 };
 
 export default Input;

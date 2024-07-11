@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { QueryParamsTable } from "./QueryParamsTable";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState("Params");
@@ -32,7 +33,8 @@ const Tab = () => {
       <div>
         {activeTab === "Params" && (
           <div>
-           
+           <h3>Query Params</h3>
+           <QueryParamsTable/>
           </div>
         )}
         {activeTab === "Authorization" && (
