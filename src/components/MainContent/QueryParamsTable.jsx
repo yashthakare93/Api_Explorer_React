@@ -51,7 +51,7 @@ export function QueryParamsTable() {
   }, [rows]);
 
   return (
-    <div className="p-4 bg-gray-900 min-h-screen text-white">
+    <div className="py-4 min-h-screen text-white">
       <div className="mb-4">
         <Input value={baseUrl} onChange={setBaseUrl} placeholder="Enter Base URL" />
       </div>
